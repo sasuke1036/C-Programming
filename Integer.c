@@ -5,7 +5,7 @@
 
 int main()
 {
-	int x,even,odd;
+	int x;
 
 	printf("Enter the value of x : ");
 	scanf("%d",&x);
