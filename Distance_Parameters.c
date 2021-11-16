@@ -11,7 +11,7 @@ int main()
 	printf("Enter the value of x : ");
 	scanf("%d",&x);
 
-	printf("Enter the value of y :");
+	printf("Enter the value of y : ");
 	scanf("%d",&y);
 
 	printf("Enter the value of radius : ");
@@ -25,9 +25,12 @@ int main()
 
 	distance = sqrt( pow((x-a),2) + pow((y-p),2) );
 
-	if(distance<radius)
-		printf("point lies inside the circle\n");
-	else
-		printf("point lies outside the circle\n");
+	if(distance < radius)
+		printf("Point lies inside the circle\n");
+	else if(distance > radius)
+		printf("Point lies outside the circle\n");
+	else 
+		printf("Point lies on the circle\n");
+
 	return 0;
 }
