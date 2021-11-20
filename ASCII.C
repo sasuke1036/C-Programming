@@ -7,7 +7,7 @@ int main()
 {
 	char x;
 
-	printf("Enter the value of x : ");
+	printf("Enter the character: ");
 	scanf("%c",&x);
 
 	int p = (int)x;
