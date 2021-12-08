@@ -28,7 +28,7 @@ int main()
 		new_balance = (past_balance + charges - credits);
 		++holder;
 
-		printf("Account No = %d\nCredit Limit = %f\nNew balance = %f\n",account_no,credit_limit,new_balance);
+		printf("Account No = %d\nCredit Limit = %f\nNew balance = %.2f\n",account_no,credit_limit,new_balance);
 		if(new_balance>credit_limit)
 		{
 			printf("Credit limit is exceeded\n");
