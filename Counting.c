@@ -5,12 +5,12 @@
 
 int main()
 {
-	int five_digit,a,b,c,d,e,k,counter=0;
+	int number,k,counter=0;
 
-	printf("Enter the Five digit number : ");
-	scanf("%d",&five_digit);
+	printf("Enter the number : ");
+	scanf("%d",&number);
 
-	k = five_digit;
+	k = number;
 
 	while(k>0)
 	{
@@ -23,9 +23,6 @@ int main()
 		}
 	}
 
-	printf("%d of sevens = %d\n",counter,five_digit);
+	printf("%d of sevens = %d\n",counter,number);
 	return 0;
 }
-
-
-

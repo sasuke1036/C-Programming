@@ -5,29 +5,15 @@
 
 int main()
 {
-	int n,counter,factorial;
+	int number,factorial=1;
 
-	
-	printf("Enter the value of n : ");
-	scanf("%d",&n);
+	printf("NUMBER\tFACTORIAL\n");
 
-	if(n == 0)
+	for(number=1;number<=5;number++)
 	{
-		factorial = 1;
-	}
-	else
-	{
-		factorial = n;		
+		factorial*=number;
+		printf("%d\t%d\n",number,factorial);
 	}
 
-	counter = n-1;
-
-	while(counter>0)
-	{
-		factorial *= counter;
-		counter--;
-	}
-
-	printf("%d\n",factorial);
 	return 0;
 }
