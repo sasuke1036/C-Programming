@@ -5,16 +5,21 @@
 
 int main()
 {
+	int x,i,sum=0;
+	float avg=0;
 
-	float avg=0,numbers,sum=0;
+	for(i=0;i>=0;i++)
+	{
+		printf("Enter the value of x : ");
+		scanf("%d",&x);
 
-	printf("Enter the five numbers : ");
-	scanf("%f%f%f%f%f",&numbers,&numbers,&numbers,&numbers,&numbers);
-
-	sum+=numbers;
-
-	avg=(sum)/5;
-
+		if(x == 9999)
+		{
+			break;
+		}
+		sum +=x;
+	}
+	avg = (float)sum/i;	
 	printf("Avg is %.2f\n",avg);
 	return 0;
 }

@@ -5,13 +5,18 @@
 
 int main()
 {
-	int x,total=0;
+	int x,y,i,total=0;
 
-	for(x=100;x<=500;x+=100){
+	printf("Enter the number of values to be summed : ");
+	scanf("%d",&y);
 
-		total+=x;
+	for(i=1;i<=y;i++)
+	{
+		printf("Enter the value of number to be summed : ");
+		scanf("%d",&x);
+
+		total +=x;
 	}
-
 	printf("Total is %d\n",total);
 	return 0;
 }

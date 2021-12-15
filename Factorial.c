@@ -5,15 +5,16 @@
 
 int main()
 {
-	int number,factorial=1;
+	long long int number,factorial=1,counter;
 
-	printf("NUMBER\tFACTORIAL\n");
+	printf("Enter the number : ");
+	scanf("%lld",&number);
 
-	for(number=1;number<=5;number++)
+	for(counter=1;counter<=number;counter++)
 	{
-		factorial*=number;
-		printf("%d\t%d\n",number,factorial);
+		factorial*=counter;
+		
 	}
-
+	printf("%lld\t%lld\n",number,factorial);
 	return 0;
 }
