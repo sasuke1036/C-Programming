@@ -10,9 +10,9 @@ int main()
 	printf("Enter the value of x : ");
 	scanf("%d",&x);
 
-	for(a=1;a<=x;a++)
+	/*for(a=1;a<=x;a++)
 	{
-		for(b=9;b>=a;b--)
+		for(b=x-1;b>=a;b--)
 		{
 			printf(" ");
 		}
@@ -22,8 +22,30 @@ int main()
 			}
 
 		printf("\n");
-	}
+	}*/
 
+	/*for(a=1;a<=x;a++)
+	{
+		for(b=1;b<a;b++)
+		{
+			printf(" ");
+		}
+		for(b=x;b>=a;b--)
+		{
+			printf("*");
+		}
+		printf("\n");
+	}*/
+ 	
+
+ 	for(a=1;a<=x;a++)
+ 	{
+ 		for(b=1;b<=a;b++)
+ 		{
+ 			printf("*");
+ 		}
+ 		printf("\n");
+ 	}
 	return 0;
 
 }
